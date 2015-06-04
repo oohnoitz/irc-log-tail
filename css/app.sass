@@ -1,0 +1,119 @@
+*
+  box-sizing: border-box
+
+html, body, #app
+  height: 100%
+  overflow: hidden
+  margin: 0
+
+body
+  font-family: "Open Sans"
+
+div.container
+  display: flex
+  flex-flow: column
+  height: 100%
+
+  h1
+    padding: 20px 20px 1px 20px
+    background: #222
+    color: #eee
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-weight: bold
+    margin: 0
+
+  .topic
+    padding: 1px 20px 20px 20px
+    font-size: 0.6em
+    font-style: italic
+    background: #222
+    color: #eee
+    margin-top: -1px
+
+div.main
+  display: flex
+  flex: 1
+
+div.user-list-container
+  flex: 0 0 auto
+  display: flex
+  flex-flow: column
+  border-left: 1px solid #ddd
+
+  h2
+    padding: 8px
+    font-size: 12px
+    text-align: center
+    color: darken(white, 50%)
+    border-bottom: 1px solid darken(white, 4%)
+
+  .user-list
+    flex: 1
+    overflow-y: auto
+
+  .user-list-item
+    display: flex
+    align-items: center
+    font-size: 12px
+    padding: 5px
+
+div.event-log-container
+  background: darken(white, 4%)
+  font-size: 13px
+  flex: 2
+  display: flex
+  flex-flow: column
+  font-family: monospace
+
+  .event-log
+    flex: 1
+    overflow-y: auto
+
+  .event-item
+    display: flex
+    align-items: center
+    padding: 0 5px
+
+    .event-message
+      display: flex
+      flex-flow: column
+      flex: 3
+      line-height: 1.3em
+      padding: 5px
+
+      strong
+        font-weight: bold
+      em
+        font-style: italic
+      a
+        color: #336633
+
+    .event-timestamp
+      font-weight: normal
+      font-size: 12px
+      color: #999
+
+    .event-type-message
+      color: black
+    .event-type-ctcp
+      color: purple
+    .event-type-mode
+      color: green
+    .event-type-join
+      color: green
+    .event-type-kick
+      color: green
+    .event-type-nick
+      color: green
+    .event-type-part
+      color: gray
+    .event-type-quit
+      color: navy
+    .event-type-topic
+      color: green
+    .event-type-split
+      color: navy
+    .event-type-rejoin
+      color: green
