@@ -114,14 +114,6 @@ class UserListItem extends React.Component {
   }
 }
 
-class ChannelForm extends React.Component {
-  render() {
-    return (
-      <input ref="channel" type="text" />
-    );
-  }
-}
-
 /**
  * Main Component
  */
