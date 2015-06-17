@@ -141,7 +141,7 @@ class App extends React.Component {
 
   getChannelLog() {
     $.ajax({
-      url: `api.php`,
+      url: `api`,
       dataType: 'json',
       data: {
         channel: this.state.channel !== null ? this.state.channel.slice(1) : this.props.defaultChannel,
